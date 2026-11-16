@@ -87,3 +87,22 @@ def test_fixture_has_repeatable_row_ids(tmp_path):
     second = [(r["invoice"], r["quantity_text"]) for r in workbook_rows(b, digest(b))]
     assert first == second
     assert first_hash == digest(b)
+
+
+def test_oracle_preserves_admitted_high_precision(tmp_path):
+    from decimal import Context
+
+    from faro_foundation.baseline import reference
+
+    book = openpyxl.Workbook()
+    book.active.append(HEADERS)
+    quantity = "999999999999999"
+    price = "123456789012.123456789012"
+    book.active.append(
+        ["123", "12345", "High precision", quantity, datetime(2011, 1, 1), price, "1", "UK"]
+    )
+    path = tmp_path / "precision.xlsx"
+    book.save(path)
+    result = reference({"source_path": str(path), "dataset_sha256": digest(path)}, tmp_path)
+    expected = Context(prec=80).multiply(Decimal(quantity), Decimal(price))
+    assert Decimal(result["known_signed_amount"]) == expected

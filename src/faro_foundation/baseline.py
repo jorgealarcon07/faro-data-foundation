@@ -3,7 +3,7 @@
 import json
 import re
 from collections import defaultdict
-from decimal import Decimal
+from decimal import Context, Decimal
 from pathlib import Path
 
 from .common import FaroError, digest, write_json
@@ -51,6 +51,7 @@ def reference(metadata: dict, directory: Path) -> dict:
     reasons = defaultdict(int)
     count = unknown_customers = 0
     total = Decimal(0)
+    exact = Context(prec=80)
     for row in workbook_rows(path, metadata["dataset_sha256"]):
         kind, reason = classify(row)
         moment = datetime_or_none(row["event_text"])
@@ -62,8 +63,9 @@ def reference(metadata: dict, directory: Path) -> dict:
         if quantity is None or price is None:
             group["unknown_amount_rows"] += 1
         else:
-            group["amount"] += quantity * price
-            total += quantity * price
+            amount = exact.multiply(quantity, price)
+            group["amount"] = exact.add(group["amount"], amount)
+            total = exact.add(total, amount)
         unknown_customers += int(not row["customer_text"])
         count += 1
     result = {
