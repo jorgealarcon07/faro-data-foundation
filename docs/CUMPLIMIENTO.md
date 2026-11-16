@@ -14,7 +14,7 @@ Revisión final 16-11-2026. Los estándares se crearon antes del código y fuero
 | Calidad/modelado | 11 tests dbt/build + baseline independiente por fecha/clase y controles de publicación | Verificado, 1.798 grupos |
 | Reproducibilidad | Git/code/contract/source/data hashes, versiones y semillas; rebuild/replay/backfill | Mismo hash real en las tres ejecuciones finales |
 | Recuperación | Candidato separado, locks, head guard, transacción, crash/replay y corrupción sembrada | Pruebas correctas |
-| Pruebas | 17 unitarias + 12 integración/aceptación, sin sustituir PostgreSQL o dbt | 28 correctas; JUnit guardado |
+| Pruebas | 18 unitarias + 12 integración/aceptación, sin sustituir PostgreSQL o dbt | 28 correctas; JUnit guardado |
 | CI | Workflow Linux/PostgreSQL y smoke Airflow; mismos comandos de QA | Configurado, remoto no ejecutado |
 | Seguridad | SQL parametrizado, nombres validados, ZIP limitado, loopback, escape JSON/DOM, fuentes fuera de Git | Casos y revisión local; no certificación productiva |
 | Observabilidad | Eventos JSON, historial SQL, tiempos/filas/RSS, error seguro y manifests | Evidencia guardada; sin monitor 24/7 |

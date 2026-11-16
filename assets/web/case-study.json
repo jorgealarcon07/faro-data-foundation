@@ -18,15 +18,15 @@
   "measurements": [
     {
       "label": "full",
-      "seconds": 78.6485759999996
+      "seconds": 30.957816000000093
     },
     {
       "label": "replay",
-      "seconds": 29.69935179999993
+      "seconds": 29.503075000000536
     },
     {
       "label": "backfill",
-      "seconds": 20.13608699999986
+      "seconds": 20.513113999999405
     }
   ],
   "business_impact_observed": null,

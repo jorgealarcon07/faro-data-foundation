@@ -23,6 +23,8 @@ flowchart LR
 
 No hay clases base abstractas sin dos implementaciones reales. La configuración inmutable y funciones con entradas explícitas aplican responsabilidad única y facilitan pruebas. Las reglas SQL y el baseline independiente se parecen por necesidad semántica, pero no comparten la función clasificadora; así, un error de traducción puede detectarse.
 
+No se añadió pandas como paso decorativo: openpyxl y Arrow permiten procesar la fuente por lotes sin materializar un dataframe completo. La demostración de pandas/NumPy queda en los futuros proyectos científicos del plan. El fixture comercial mantiene GBP y otro namespace, para comprobar el contrato sin convertir artificialmente monedas.
+
 ## Persistencia y grano
 
 `faro.sources`: una versión de fuente. `faro.source_rows`: una fila por checksum + identidad de origen; PK impide duplicación de identidad, no de contenido. `faro.runs/events`: estado y bitácora. Cada ejecución usa un esquema `r_<uuidhex>` para candidato; ningún nombre arbitrario del usuario se interpola como SQL. El snapshot incluye una fila fact por origen, dimensiones sin SCD ficticio y dos marts por día/clase y día/calidad.

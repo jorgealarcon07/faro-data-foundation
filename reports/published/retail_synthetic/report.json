@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-16T23:24:57.828856+00:00",
+  "generated_at": "2026-11-16T23:32:38.213636+00:00",
   "namespace": "retail_synthetic",
-  "publication_run_id": "0579d94a5f854fef915ba9f30c913883",
+  "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560",
   "manifest": {
     "dbt": {
       "nodes": 18,
@@ -9,7 +9,7 @@
     },
     "rows": 10000,
     "seed": 2026,
-    "as_of": "2026-11-16T23:24:57.395107+00:00",
+    "as_of": "2026-11-16T23:32:37.795365+00:00",
     "checks": {
       "rows": 10000,
       "status": "provisional",
@@ -18,20 +18,20 @@
       "known_signed_amount": "183852.10",
       "unknown_customer_rows": 589
     },
-    "run_id": "0579d94a5f854fef915ba9f30c913883",
-    "git_sha": "d405aa70bb227e3c653a490422ce7d80995209c3",
+    "run_id": "3f15fe084c5749a5ba299ab5d7611560",
+    "git_sha": "40288c44a44e96c234f8ed732d23452a918f2bbe",
     "timings": {
-      "dbt_seconds": 7.547244399999727,
-      "load_seconds": 0.04718899999988935,
-      "baseline_seconds": 0.0019645000002128654,
-      "validation_seconds": 0.11257180000029621
+      "dbt_seconds": 7.6345658000000185,
+      "load_seconds": 0.04519640000034997,
+      "baseline_seconds": 0.001790199999959441,
+      "validation_seconds": 0.10721780000039871
     },
     "interval": {
       "end": "2011-01-05",
       "start": "2011-01-03"
     },
     "data_kind": "synthetic",
-    "code_sha256": "5015feda4f653b5bef4432b4766768fde100b50d84672fe9f46f39f11e64d97b",
+    "code_sha256": "8cea02f4c59e8c621442c0124a957dd6b9ebaae290c40b7c157ffa85ffab617a",
     "data_sha256": "9e63422b8cfb66a59887fe171fc53364bb33a796324334f9da132cbda5dd366f",
     "environment": {
       "python": "3.12.14",
@@ -45,7 +45,7 @@
       "platform": "Windows-11-10.0.26200-SP0"
     },
     "dataset_sha256": "cf27214ff042e9d4e429c70022460c13471b9aad73b589963d02ac3edb45f5d5",
-    "elapsed_seconds": 7.895604700000149,
+    "elapsed_seconds": 7.9750364000001355,
     "source_metadata": {
       "rows": 10000,
       "seed": 2026,
@@ -59,7 +59,7 @@
     "contract_version": "1.0.0",
     "contracts_sha256": "7a92a2a53f8ad239e3c967846fdfed9b8ef83b40a5a577e1710e1a8e2c07278e",
     "source_namespace": "retail_synthetic",
-    "peak_python_tree_rss_bytes": 411205632
+    "peak_python_tree_rss_bytes": 421294080
   },
   "activity": [
     {
@@ -71,7 +71,7 @@
       "row_count": 47,
       "signed_amount": "364.77",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -82,7 +82,7 @@
       "row_count": 28,
       "signed_amount": "-465.92",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -93,7 +93,7 @@
       "row_count": 21,
       "signed_amount": null,
       "unknown_amount_rows": 21,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -104,7 +104,7 @@
       "row_count": 886,
       "signed_amount": "17832.09",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -115,7 +115,7 @@
       "row_count": 46,
       "signed_amount": "535.88",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -126,7 +126,7 @@
       "row_count": 27,
       "signed_amount": "-563.27",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -137,7 +137,7 @@
       "row_count": 19,
       "signed_amount": null,
       "unknown_amount_rows": 19,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -148,7 +148,7 @@
       "row_count": 891,
       "signed_amount": "18686.20",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -159,7 +159,7 @@
       "row_count": 45,
       "signed_amount": "343.53",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -170,7 +170,7 @@
       "row_count": 27,
       "signed_amount": "-645.75",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -181,7 +181,7 @@
       "row_count": 20,
       "signed_amount": null,
       "unknown_amount_rows": 20,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -192,7 +192,7 @@
       "row_count": 892,
       "signed_amount": "17912.04",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -203,7 +203,7 @@
       "row_count": 47,
       "signed_amount": "453.44",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -214,7 +214,7 @@
       "row_count": 27,
       "signed_amount": "-495.92",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -225,7 +225,7 @@
       "row_count": 20,
       "signed_amount": null,
       "unknown_amount_rows": 20,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -236,7 +236,7 @@
       "row_count": 890,
       "signed_amount": "18586.59",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -247,7 +247,7 @@
       "row_count": 45,
       "signed_amount": "443.43",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -258,7 +258,7 @@
       "row_count": 27,
       "signed_amount": "-430.97",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -269,7 +269,7 @@
       "row_count": 20,
       "signed_amount": null,
       "unknown_amount_rows": 20,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -280,7 +280,7 @@
       "row_count": 891,
       "signed_amount": "17345.21",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -291,7 +291,7 @@
       "row_count": 44,
       "signed_amount": "412.21",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -302,7 +302,7 @@
       "row_count": 27,
       "signed_amount": "-357.26",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -313,7 +313,7 @@
       "row_count": 19,
       "signed_amount": null,
       "unknown_amount_rows": 19,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -324,7 +324,7 @@
       "row_count": 892,
       "signed_amount": "18846.19",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -335,7 +335,7 @@
       "row_count": 46,
       "signed_amount": "419.72",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -346,7 +346,7 @@
       "row_count": 27,
       "signed_amount": "-553.38",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -357,7 +357,7 @@
       "row_count": 20,
       "signed_amount": null,
       "unknown_amount_rows": 20,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -368,7 +368,7 @@
       "row_count": 890,
       "signed_amount": "17861.16",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -379,7 +379,7 @@
       "row_count": 46,
       "signed_amount": "537.12",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -390,7 +390,7 @@
       "row_count": 27,
       "signed_amount": "-453.49",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -401,7 +401,7 @@
       "row_count": 20,
       "signed_amount": null,
       "unknown_amount_rows": 20,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -412,7 +412,7 @@
       "row_count": 890,
       "signed_amount": "18142.99",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -423,7 +423,7 @@
       "row_count": 46,
       "signed_amount": "298.62",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -434,7 +434,7 @@
       "row_count": 27,
       "signed_amount": "-594.61",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -445,7 +445,7 @@
       "row_count": 19,
       "signed_amount": null,
       "unknown_amount_rows": 19,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -456,7 +456,7 @@
       "row_count": 890,
       "signed_amount": "18305.45",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -467,7 +467,7 @@
       "row_count": 46,
       "signed_amount": "587.02",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -478,7 +478,7 @@
       "row_count": 27,
       "signed_amount": "-753.12",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -489,7 +489,7 @@
       "row_count": 20,
       "signed_amount": null,
       "unknown_amount_rows": 20,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -500,7 +500,7 @@
       "row_count": 890,
       "signed_amount": "17543.78",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -511,7 +511,7 @@
       "row_count": 171,
       "signed_amount": "3708.35",
       "unknown_amount_rows": 0,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     }
   ],
   "quality": [
@@ -527,7 +527,7 @@
       "unknown_amount_rows": 21,
       "quarantined_known_amount": null,
       "publication_status": "provisional",
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -541,7 +541,7 @@
       "unknown_amount_rows": 19,
       "quarantined_known_amount": null,
       "publication_status": "provisional",
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -555,7 +555,7 @@
       "unknown_amount_rows": 20,
       "quarantined_known_amount": null,
       "publication_status": "provisional",
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -569,7 +569,7 @@
       "unknown_amount_rows": 20,
       "quarantined_known_amount": null,
       "publication_status": "provisional",
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -583,7 +583,7 @@
       "unknown_amount_rows": 20,
       "quarantined_known_amount": null,
       "publication_status": "provisional",
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -597,7 +597,7 @@
       "unknown_amount_rows": 19,
       "quarantined_known_amount": null,
       "publication_status": "provisional",
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -611,7 +611,7 @@
       "unknown_amount_rows": 20,
       "quarantined_known_amount": null,
       "publication_status": "provisional",
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -625,7 +625,7 @@
       "unknown_amount_rows": 20,
       "quarantined_known_amount": null,
       "publication_status": "provisional",
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -639,7 +639,7 @@
       "unknown_amount_rows": 19,
       "quarantined_known_amount": null,
       "publication_status": "provisional",
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -653,7 +653,7 @@
       "unknown_amount_rows": 20,
       "quarantined_known_amount": null,
       "publication_status": "provisional",
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     },
     {
       "source_namespace": "retail_synthetic",
@@ -667,7 +667,7 @@
       "unknown_amount_rows": 0,
       "quarantined_known_amount": "3708.35",
       "publication_status": "provisional",
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     }
   ],
   "reasons": [
@@ -1351,6 +1351,90 @@
   ],
   "history": [
     {
+      "run_id": "3f15fe084c5749a5ba299ab5d7611560",
+      "state": "published",
+      "error_code": null,
+      "created_at": "2026-11-16 18:32:29.711958-05:00"
+    },
+    {
+      "run_id": "fb073a203fb74a5e892617fc571187ef",
+      "state": "published",
+      "error_code": "Injected crash before publication (SIMULATED)",
+      "created_at": "2026-11-16 18:32:12.572168-05:00"
+    },
+    {
+      "run_id": "0d6ad0c04ca4427d80b8b194584d9549",
+      "state": "published",
+      "error_code": null,
+      "created_at": "2026-11-16 18:32:04.431716-05:00"
+    },
+    {
+      "run_id": "902e63ed30374ccf84f53961d032b13d",
+      "state": "created",
+      "error_code": null,
+      "created_at": "2026-11-16 18:32:03.141773-05:00"
+    },
+    {
+      "run_id": "ee85c759c29f498780c514077202c335",
+      "state": "published",
+      "error_code": null,
+      "created_at": "2026-11-16 18:31:55.636545-05:00"
+    },
+    {
+      "run_id": "f2c03b723d0d446a9b8dc19e545b6773",
+      "state": "published",
+      "error_code": null,
+      "created_at": "2026-11-16 18:31:46.155723-05:00"
+    },
+    {
+      "run_id": "e09f410adbd24e3e8e45724caf9dfb50",
+      "state": "created",
+      "error_code": null,
+      "created_at": "2026-11-16 18:31:46.039681-05:00"
+    },
+    {
+      "run_id": "69b68934909042c690b66bca8b94a0d1",
+      "state": "failed",
+      "error_code": "Independent baseline reconciliation failed in 1 groups",
+      "created_at": "2026-11-16 18:31:38.054580-05:00"
+    },
+    {
+      "run_id": "f65d3d4f39cb4b7887b16c10171df22c",
+      "state": "failed",
+      "error_code": "Independent baseline reconciliation failed in 1 groups",
+      "created_at": "2026-11-16 18:31:30.428154-05:00"
+    },
+    {
+      "run_id": "7f780321aff84d9ebf040f89e9d0ca3a",
+      "state": "published",
+      "error_code": "Injected crash before publication (SIMULATED)",
+      "created_at": "2026-11-16 18:31:15.196619-05:00"
+    },
+    {
+      "run_id": "7ac38aa265cf49aeb9a4febcd2c7f9ad",
+      "state": "published",
+      "error_code": "Injected crash after staging (SIMULATED)",
+      "created_at": "2026-11-16 18:31:06.729243-05:00"
+    },
+    {
+      "run_id": "851965bf8e9743c8ad4ec98cdac989a4",
+      "state": "published",
+      "error_code": null,
+      "created_at": "2026-11-16 18:30:58.103720-05:00"
+    },
+    {
+      "run_id": "f4664cefb25c4b7fb1179fc231b641a2",
+      "state": "published",
+      "error_code": null,
+      "created_at": "2026-11-16 18:30:49.897242-05:00"
+    },
+    {
+      "run_id": "892256c77a5c4378b837ae417ae70824",
+      "state": "published",
+      "error_code": null,
+      "created_at": "2026-11-16 18:30:41.071529-05:00"
+    },
+    {
       "run_id": "0579d94a5f854fef915ba9f30c913883",
       "state": "published",
       "error_code": null,
@@ -1385,90 +1469,6 @@
       "state": "published",
       "error_code": null,
       "created_at": "2026-11-16 18:24:06.243866-05:00"
-    },
-    {
-      "run_id": "83f41862a0c6421d891f831de689f3f8",
-      "state": "created",
-      "error_code": null,
-      "created_at": "2026-11-16 18:24:06.114735-05:00"
-    },
-    {
-      "run_id": "a4338b7c768b4d76ae637d34dcb3ce81",
-      "state": "failed",
-      "error_code": "Independent baseline reconciliation failed in 1 groups",
-      "created_at": "2026-11-16 18:23:58.142498-05:00"
-    },
-    {
-      "run_id": "37153d1a49db422189d60b84f5999be0",
-      "state": "failed",
-      "error_code": "Independent baseline reconciliation failed in 1 groups",
-      "created_at": "2026-11-16 18:23:50.461452-05:00"
-    },
-    {
-      "run_id": "3f14b2473a214c37bb4ed0d569acb654",
-      "state": "published",
-      "error_code": "Injected crash before publication (SIMULATED)",
-      "created_at": "2026-11-16 18:23:34.574571-05:00"
-    },
-    {
-      "run_id": "e7185b7317004864a89e1ae3cf24603a",
-      "state": "published",
-      "error_code": "Injected crash after staging (SIMULATED)",
-      "created_at": "2026-11-16 18:23:26.391630-05:00"
-    },
-    {
-      "run_id": "2ab2304af51c4f429bafe91947222ea9",
-      "state": "published",
-      "error_code": null,
-      "created_at": "2026-11-16 18:23:18.879748-05:00"
-    },
-    {
-      "run_id": "a79e76bc4d7641f79917e81c65f1bfe7",
-      "state": "published",
-      "error_code": null,
-      "created_at": "2026-11-16 18:23:11.093689-05:00"
-    },
-    {
-      "run_id": "ae235be95a204765b8efd1ebc338d6f7",
-      "state": "published",
-      "error_code": null,
-      "created_at": "2026-11-16 18:23:01.991220-05:00"
-    },
-    {
-      "run_id": "4cee338b2e77411199561582b7dd871c",
-      "state": "published",
-      "error_code": null,
-      "created_at": "2026-11-16 18:12:36.569167-05:00"
-    },
-    {
-      "run_id": "e31d12c445864af7ba8c550cb116e554",
-      "state": "published",
-      "error_code": "Injected crash before publication (SIMULATED)",
-      "created_at": "2026-11-16 18:12:19.842915-05:00"
-    },
-    {
-      "run_id": "c1a563ff69b54f0c9929c62e20c36943",
-      "state": "published",
-      "error_code": null,
-      "created_at": "2026-11-16 18:12:10.020753-05:00"
-    },
-    {
-      "run_id": "9a220184aaa64d2883c77c74682c8e6e",
-      "state": "created",
-      "error_code": null,
-      "created_at": "2026-11-16 18:12:07.854896-05:00"
-    },
-    {
-      "run_id": "21ebe56ef2af49a7a5adb83a2a0cbb2d",
-      "state": "published",
-      "error_code": null,
-      "created_at": "2026-11-16 18:11:59.229258-05:00"
-    },
-    {
-      "run_id": "3b399a6f1d5e4716affc54932ff4ea79",
-      "state": "published",
-      "error_code": null,
-      "created_at": "2026-11-16 18:11:48.904315-05:00"
     }
   ]
 }

@@ -6,14 +6,14 @@
       "activity_rows": 1798,
       "class_filter": true,
       "quality_tab": true,
-      "publication_run_id": "e6d035ce2bd24077bbeb81d0dd286a1e"
+      "publication_run_id": "81ac4b09a2e44ee8826522fa9121e17b"
     },
     {
       "namespace": "retail_synthetic",
       "activity_rows": 41,
       "class_filter": true,
       "quality_tab": true,
-      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+      "publication_run_id": "3f15fe084c5749a5ba299ab5d7611560"
     }
   ],
   "page_errors": [],

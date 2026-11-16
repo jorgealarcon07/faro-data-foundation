@@ -27,7 +27,7 @@ El producto incluye CLI, historial y logs, reanudación, backfill, un reporte HT
 
 La fuente pública histórica [UCI Online Retail II](https://archive.ics.uci.edu/dataset/502/online+retail+ii), Chen, [DOI 10.24432/C5CG6D](https://doi.org/10.24432/C5CG6D), se usó con atribución CC BY 4.0 y hashes aprobados. Se procesaron **1.067.371 filas de dos hojas**, sin perder registros. Rebuild, replay y backfill generaron el mismo hash canónico.
 
-La validación final pasó **29 pruebas pytest**, **11 tests dbt por build** y comparación de **1.798 grupos** con el baseline independiente. Rebuild final con fuente ya cargada: 78,65 s; replay: 29,70 s; backfill de una semana: 20,14 s. No son condiciones de ingesta fría ni percentiles; el costo de primera lectura/carga se documenta por separado.
+La validación final pasó **30 pruebas pytest**, **11 tests dbt por build** y comparación de **1.798 grupos** con el baseline independiente. Rebuild final con fuente ya cargada: 30,96 s; replay: 29,50 s; backfill de una semana: 20,51 s. No son condiciones de ingesta fría ni percentiles; el costo de primera lectura/carga se documenta por separado.
 
 El resultado se publicó como **provisional** por 243.007 filas sin cliente. No se inventaron identificadores para presentar una calidad perfecta. Los fallos de la demo sintética conservaron el head anterior y pudieron recuperarse con el mismo resultado. La interfaz fue probada en un navegador y se guardaron cuatro capturas.
 
