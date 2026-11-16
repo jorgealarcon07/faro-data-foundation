@@ -1,0 +1,41 @@
+name: faro-foundation
+services:
+  postgres:
+    image: postgres:17.12-bookworm
+    environment:
+      POSTGRES_USER: faro
+      POSTGRES_DB: faro
+      POSTGRES_PASSWORD: ${FARO_DB_PASSWORD:?Set a unique FARO_DB_PASSWORD in .env}
+    ports: ["127.0.0.1:55432:5432"]
+    volumes: ["pgdata:/var/lib/postgresql/data"]
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U faro -d faro"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+  app:
+    build: .
+    environment: &app-env
+      FARO_DB_HOST: postgres
+      FARO_DB_PORT: '5432'
+      FARO_DB_NAME: faro
+      FARO_DB_USER: faro
+      FARO_DB_PASSWORD: ${FARO_DB_PASSWORD}
+    depends_on:
+      postgres: {condition: service_healthy}
+    volumes: ["./data:/app/data", "./reports:/app/reports"]
+  airflow:
+    profiles: [airflow]
+    build: {context: ., dockerfile: Dockerfile.airflow}
+    environment:
+      <<: *app-env
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+      AIRFLOW__CORE__DAGS_FOLDER: /app/dags
+    ports: ["127.0.0.1:8080:8080"]
+    command: standalone
+    depends_on:
+      postgres: {condition: service_healthy}
+    volumes: ["./data:/app/data", "./reports:/app/reports", "airflowhome:/opt/airflow"]
+volumes:
+  pgdata:
+  airflowhome:

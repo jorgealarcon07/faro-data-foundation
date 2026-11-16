@@ -1,0 +1,54 @@
+name: verified-data-close
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  pipeline:
+    runs-on: ubuntu-24.04
+    services:
+      postgres:
+        image: postgres:17.12-bookworm
+        env:
+          POSTGRES_USER: faro
+          POSTGRES_DB: faro
+          POSTGRES_PASSWORD: ci-fixture-only
+        ports: ['55432:5432']
+        options: >-
+          --health-cmd "pg_isready -U faro -d faro"
+          --health-interval 5s --health-timeout 5s --health-retries 20
+    env:
+      FARO_DB_PASSWORD: ci-fixture-only
+      FARO_DB_PORT: '55432'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install -r requirements.lock
+      - run: pip install --no-deps --no-build-isolation -e .
+      - run: python -m pip check
+      - run: python -m ruff check .
+      - run: python scripts/check_contracts.py
+      - run: python -m pytest -m 'not airflow' --junitxml=reports/tests.xml
+      - run: faro demo
+      - run: python scripts/check_secrets.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: validation-evidence
+          path: |
+            reports/tests.xml
+            reports/demo.json
+            reports/runs/**/manifest.json
+            reports/runs/**/dbt-build.log
+  airflow-import:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build -f Dockerfile.airflow -t faro-airflow .
+      - run: >-
+          docker run --rm -e FARO_DB_PASSWORD=ci-fixture-only
+          -e AIRFLOW__CORE__LOAD_EXAMPLES=false faro-airflow
+          python /app/scripts/check_airflow.py

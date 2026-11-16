@@ -1,0 +1,10 @@
+FROM apache/airflow:3.4.0-python3.12
+USER root
+RUN python -m venv /opt/faro && chown -R airflow:root /opt/faro
+USER airflow
+COPY requirements.lock /tmp/faro-requirements.lock
+RUN /opt/faro/bin/pip install --no-cache-dir -r /tmp/faro-requirements.lock
+COPY --chown=airflow:root . /app
+RUN /opt/faro/bin/pip install --no-deps --no-build-isolation /app
+ENV FARO_HOME=/app
+
