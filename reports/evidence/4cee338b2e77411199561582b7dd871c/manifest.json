@@ -1,0 +1,59 @@
+{
+  "contract_version": "1.0.0",
+  "contracts_sha256": "7a92a2a53f8ad239e3c967846fdfed9b8ef83b40a5a577e1710e1a8e2c07278e",
+  "run_id": "4cee338b2e77411199561582b7dd871c",
+  "git_sha": "ebde54875eb202970ab0ecc6b0101dbda77f4755",
+  "code_sha256": "6823b7ce95db5938653d89a964320482c9486f53f07f61b08732639c626ab740",
+  "dataset_sha256": "cf27214ff042e9d4e429c70022460c13471b9aad73b589963d02ac3edb45f5d5",
+  "source_namespace": "retail_synthetic",
+  "data_kind": "synthetic",
+  "seed": 2026,
+  "as_of": "2026-11-16T23:12:44.138581+00:00",
+  "rows": 10000,
+  "data_sha256": "9e63422b8cfb66a59887fe171fc53364bb33a796324334f9da132cbda5dd366f",
+  "checks": {
+    "status": "provisional",
+    "reconciled_groups": 41,
+    "rows": 10000,
+    "unknown_customer_rows": 589,
+    "quarantine_rows": 369,
+    "known_signed_amount": "183852.10"
+  },
+  "dbt": {
+    "nodes": 18,
+    "tests_passed": 11
+  },
+  "interval": {
+    "start": "2011-01-03",
+    "end": "2011-01-05"
+  },
+  "timings": {
+    "baseline_seconds": 0.002948399999695539,
+    "load_seconds": 0.05087550000007468,
+    "dbt_seconds": 7.093707399999403,
+    "validation_seconds": 0.10949710000022606
+  },
+  "elapsed_seconds": 7.44885560000057,
+  "peak_python_tree_rss_bytes": 461225984,
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "pyarrow": "26.0.1",
+      "openpyxl": "3.1.5",
+      "dbt-core": "1.12.7",
+      "dbt-postgres": "1.11.0",
+      "psycopg": "3.3.9"
+    }
+  },
+  "source_metadata": {
+    "rows": 10000,
+    "seed": 2026,
+    "data_kind": "synthetic",
+    "source_path": "C:\\Users\\jorge\\Documents\\Codex\\2026-11-11\\investiga-profundamente-el-mercado-laboral-actual\\outputs\\faro-data-foundation\\data\\fixtures\\synthetic.xlsx",
+    "parquet_path": "C:\\Users\\jorge\\Documents\\Codex\\2026-11-11\\investiga-profundamente-el-mercado-laboral-actual\\outputs\\faro-data-foundation\\data\\prepared\\cf27214ff042e9d4e429c70022460c13471b9aad73b589963d02ac3edb45f5d5\\raw.parquet",
+    "dataset_sha256": "cf27214ff042e9d4e429c70022460c13471b9aad73b589963d02ac3edb45f5d5",
+    "parquet_sha256": "c6398bcd2daa59aa160f663be8197ea6ee88dfc956366818cdd9459b1476bb21",
+    "source_namespace": "retail_synthetic"
+  }
+}

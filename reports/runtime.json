@@ -1,0 +1,14 @@
+{
+  "version": "17.12",
+  "distribution": "zonkyio/embedded-postgres-binaries",
+  "url": "https://repo.maven.apache.org/maven2/io/zonky/test/postgres/embedded-postgres-binaries-windows-amd64/17.12.0/embedded-postgres-binaries-windows-amd64-17.12.0.jar",
+  "sha256": "bebadbe868ed53adb1c12033a381e41005915205ea9fedaa2349f5467fa7016b",
+  "artifact_bytes": 23884116,
+  "system_service_installed": false,
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "AMD64 Family 26 Model 68 Stepping 0, AuthenticAMD",
+  "logical_cpus": 12,
+  "physical_cpus": 6,
+  "total_ram_bytes": 16227487744
+}

@@ -106,3 +106,29 @@ def test_oracle_preserves_admitted_high_precision(tmp_path):
     result = reference({"source_path": str(path), "dataset_sha256": digest(path)}, tmp_path)
     expected = Context(prec=80).multiply(Decimal(quantity), Decimal(price))
     assert Decimal(result["known_signed_amount"]) == expected
+
+
+def test_code_fingerprint_is_portable(tmp_path):
+    from faro_foundation.common import code_fingerprint
+
+    names = [
+        "src/app.py",
+        "pyproject.toml",
+        "requirements.lock",
+        "contracts.lock.json",
+        "dbt/dbt_project.yml",
+        "dbt/profiles.yml",
+    ]
+    for name in names:
+        path = tmp_path / name
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(b"portable\nsource\n")
+    before = code_fingerprint(tmp_path)
+    generated = tmp_path / "src/faro.egg-info/SOURCES.txt"
+    generated.parent.mkdir()
+    generated.write_text("metadata varies between installations")
+    for name in names:
+        (tmp_path / name).write_bytes(b"portable\r\nsource\r\n")
+    assert code_fingerprint(tmp_path) == before
+    (tmp_path / "src/app.py").write_text("changed behavior")
+    assert code_fingerprint(tmp_path) != before

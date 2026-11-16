@@ -1,0 +1,66 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "classes",
+  "position": {
+    "x": 800,
+    "y": 180,
+    "z": 0,
+    "height": 480,
+    "width": 440,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Activity"
+                    }
+                  },
+                  "Property": "record_class"
+                }
+              },
+              "queryRef": "Activity.record_class",
+              "nativeQueryRef": "record_class"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Activity"
+                    }
+                  },
+                  "Property": "Filas"
+                }
+              },
+              "queryRef": "Activity.Filas",
+              "nativeQueryRef": "Filas"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Activity"
+                    }
+                  },
+                  "Property": "Importe firmado GBP"
+                }
+              },
+              "queryRef": "Activity.Importe firmado GBP",
+              "nativeQueryRef": "Importe firmado GBP"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

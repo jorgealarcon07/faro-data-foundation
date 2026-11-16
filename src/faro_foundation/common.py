@@ -83,15 +83,34 @@ def git_sha(home: Path) -> str:
 
 
 def code_fingerprint(home: Path) -> str:
+    """Hash portable source text, excluding generated installation metadata."""
     files = []
-    for folder in ["src", "dbt/models", "dbt/tests", "sql", "contracts", "config"]:
+    for folder in ["src", "dbt/models", "dbt/tests", "sql", "contracts", "config", "dags"]:
         files.extend(
-            p for p in (home / folder).rglob("*") if p.is_file() and "__pycache__" not in p.parts
+            p
+            for p in (home / folder).rglob("*")
+            if p.is_file()
+            and p.suffix in {".py", ".html", ".sql", ".yml", ".yaml", ".json"}
+            and not any(part == "__pycache__" or part.endswith(".egg-info") for part in p.parts)
         )
-    files.extend(home / n for n in ["pyproject.toml", "requirements.lock", "contracts.lock.json"])
+    files.extend(
+        home / n
+        for n in [
+            "pyproject.toml",
+            "requirements.lock",
+            "contracts.lock.json",
+            "dbt/dbt_project.yml",
+            "dbt/profiles.yml",
+        ]
+    )
     h = hashlib.sha256()
     for path in sorted(files):
-        h.update(path.relative_to(home).as_posix().encode() + b"\0" + path.read_bytes() + b"\0")
+        h.update(
+            path.relative_to(home).as_posix().encode()
+            + b"\0"
+            + path.read_bytes().replace(b"\r\n", b"\n")
+            + b"\0"
+        )
     return h.hexdigest()
 
 

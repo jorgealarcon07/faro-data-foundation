@@ -1,0 +1,21 @@
+{
+  "browser": "Chromium / C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\brave.exe",
+  "checks": [
+    {
+      "namespace": "retail_uk_reference",
+      "activity_rows": 1798,
+      "class_filter": true,
+      "quality_tab": true,
+      "publication_run_id": "e6d035ce2bd24077bbeb81d0dd286a1e"
+    },
+    {
+      "namespace": "retail_synthetic",
+      "activity_rows": 41,
+      "class_filter": true,
+      "quality_tab": true,
+      "publication_run_id": "0579d94a5f854fef915ba9f30c913883"
+    }
+  ],
+  "page_errors": [],
+  "screenshots": 4
+}

@@ -1,0 +1,59 @@
+{
+  "contract_version": "1.0.0",
+  "contracts_sha256": "7a92a2a53f8ad239e3c967846fdfed9b8ef83b40a5a577e1710e1a8e2c07278e",
+  "run_id": "6f6ed93fff2f4a16892e2222c5f3a260",
+  "git_sha": "ebde54875eb202970ab0ecc6b0101dbda77f4755",
+  "code_sha256": "6823b7ce95db5938653d89a964320482c9486f53f07f61b08732639c626ab740",
+  "dataset_sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+  "source_namespace": "retail_uk_reference",
+  "data_kind": "public_real_historical",
+  "seed": null,
+  "as_of": "2026-11-16T23:15:02.566790+00:00",
+  "rows": 1067371,
+  "data_sha256": "2cda5344fa929f4a025ee85f6639a1d464eed2fcc4adf3e317263880786a53b6",
+  "checks": {
+    "status": "provisional",
+    "reconciled_groups": 1798,
+    "rows": 1067371,
+    "unknown_customer_rows": 243007,
+    "quarantine_rows": 0,
+    "known_signed_amount": "19287250.568"
+  },
+  "dbt": {
+    "nodes": 18,
+    "tests_passed": 11
+  },
+  "interval": {
+    "start": "2010-12-01",
+    "end": "2010-12-08"
+  },
+  "timings": {
+    "baseline_seconds": 0.0035084000001006643,
+    "load_seconds": 0.18553830000018934,
+    "dbt_seconds": 11.888559899999564,
+    "validation_seconds": 2.4672860000000583
+  },
+  "elapsed_seconds": 19.91072190000068,
+  "peak_python_tree_rss_bytes": 732430336,
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "pyarrow": "26.0.1",
+      "openpyxl": "3.1.5",
+      "dbt-core": "1.12.7",
+      "dbt-postgres": "1.11.0",
+      "psycopg": "3.3.9"
+    }
+  },
+  "source_metadata": {
+    "rows": 1067371,
+    "seed": null,
+    "data_kind": "public_real_historical",
+    "source_path": "C:\\Users\\jorge\\Documents\\Codex\\2026-11-11\\investiga-profundamente-el-mercado-laboral-actual\\outputs\\faro-data-foundation\\data\\online_retail_II.xlsx",
+    "parquet_path": "C:\\Users\\jorge\\Documents\\Codex\\2026-11-11\\investiga-profundamente-el-mercado-laboral-actual\\outputs\\faro-data-foundation\\data\\prepared\\bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980\\raw.parquet",
+    "dataset_sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+    "parquet_sha256": "ed2213896e48a753aa33ae79452b8ae4895ea6384ad10827b9a9d7133e95f848",
+    "source_namespace": "retail_uk_reference"
+  }
+}

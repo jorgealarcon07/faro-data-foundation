@@ -1,0 +1,447 @@
+{
+  "postgres": {
+    "version": "PostgreSQL 17.12 on x86_64-windows, compiled by msvc-19.44.35229, 64-bit"
+  },
+  "demo": {
+    "data_kind": "synthetic",
+    "rows": 10000,
+    "first_run": "c7f9ec991e5946548622194643ec0c6b",
+    "crash_run": "4d3a1b3ba3f54e01ac534d9efd46fc6c",
+    "resumed_run": "4d3a1b3ba3f54e01ac534d9efd46fc6c",
+    "backfill_run": "0579d94a5f854fef915ba9f30c913883",
+    "data_sha256": "9e63422b8cfb66a59887fe171fc53364bb33a796324334f9da132cbda5dd366f",
+    "publication_preserved": true,
+    "rebuild_equals_backfill": true,
+    "report": "C:\\Users\\jorge\\Documents\\Codex\\2026-11-11\\investiga-profundamente-el-mercado-laboral-actual\\outputs\\faro-data-foundation\\reports\\latest\\retail_synthetic\\index.html"
+  },
+  "preparation_seconds": 0.1930936999997357,
+  "real_runs": [
+    {
+      "contract_version": "1.0.0",
+      "contracts_sha256": "7a92a2a53f8ad239e3c967846fdfed9b8ef83b40a5a577e1710e1a8e2c07278e",
+      "run_id": "0e57c507a4e04180b7ddcffcc66f9d92",
+      "git_sha": "d405aa70bb227e3c653a490422ce7d80995209c3",
+      "code_sha256": "5015feda4f653b5bef4432b4766768fde100b50d84672fe9f46f39f11e64d97b",
+      "dataset_sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+      "source_namespace": "retail_uk_reference",
+      "data_kind": "public_real_historical",
+      "seed": null,
+      "as_of": "2026-11-16T23:26:16.456044+00:00",
+      "rows": 1067371,
+      "data_sha256": "2cda5344fa929f4a025ee85f6639a1d464eed2fcc4adf3e317263880786a53b6",
+      "checks": {
+        "status": "provisional",
+        "reconciled_groups": 1798,
+        "rows": 1067371,
+        "unknown_customer_rows": 243007,
+        "quarantine_rows": 0,
+        "known_signed_amount": "19287250.568"
+      },
+      "dbt": {
+        "nodes": 18,
+        "tests_passed": 11
+      },
+      "interval": {
+        "start": "",
+        "end": ""
+      },
+      "timings": {
+        "baseline_seconds": 49.840680399999655,
+        "load_seconds": 0.13413159999981872,
+        "dbt_seconds": 19.404502299999876,
+        "validation_seconds": 8.68012970000018
+      },
+      "elapsed_seconds": 78.21913810000024,
+      "peak_python_tree_rss_bytes": 721985536,
+      "environment": {
+        "python": "3.12.14",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "packages": {
+          "pyarrow": "26.0.1",
+          "openpyxl": "3.1.5",
+          "dbt-core": "1.12.7",
+          "dbt-postgres": "1.11.0",
+          "psycopg": "3.3.9"
+        }
+      },
+      "source_metadata": {
+        "rows": 1067371,
+        "seed": null,
+        "data_kind": "public_real_historical",
+        "source_path": "C:\\Users\\jorge\\Documents\\Codex\\2026-11-11\\investiga-profundamente-el-mercado-laboral-actual\\outputs\\faro-data-foundation\\data\\online_retail_II.xlsx",
+        "parquet_path": "C:\\Users\\jorge\\Documents\\Codex\\2026-11-11\\investiga-profundamente-el-mercado-laboral-actual\\outputs\\faro-data-foundation\\data\\prepared\\bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980\\raw.parquet",
+        "dataset_sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+        "parquet_sha256": "ed2213896e48a753aa33ae79452b8ae4895ea6384ad10827b9a9d7133e95f848",
+        "source_namespace": "retail_uk_reference"
+      },
+      "benchmark_label": "full",
+      "measured_wall_seconds": 78.6485759999996
+    },
+    {
+      "contract_version": "1.0.0",
+      "contracts_sha256": "7a92a2a53f8ad239e3c967846fdfed9b8ef83b40a5a577e1710e1a8e2c07278e",
+      "run_id": "6ea7d4fb4fc442588b09726bc8c38474",
+      "git_sha": "d405aa70bb227e3c653a490422ce7d80995209c3",
+      "code_sha256": "5015feda4f653b5bef4432b4766768fde100b50d84672fe9f46f39f11e64d97b",
+      "dataset_sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+      "source_namespace": "retail_uk_reference",
+      "data_kind": "public_real_historical",
+      "seed": null,
+      "as_of": "2026-11-16T23:26:46.081812+00:00",
+      "rows": 1067371,
+      "data_sha256": "2cda5344fa929f4a025ee85f6639a1d464eed2fcc4adf3e317263880786a53b6",
+      "checks": {
+        "status": "provisional",
+        "reconciled_groups": 1798,
+        "rows": 1067371,
+        "unknown_customer_rows": 243007,
+        "quarantine_rows": 0,
+        "known_signed_amount": "19287250.568"
+      },
+      "dbt": {
+        "nodes": 18,
+        "tests_passed": 11
+      },
+      "interval": {
+        "start": "",
+        "end": ""
+      },
+      "timings": {
+        "baseline_seconds": 0.003410000000258151,
+        "load_seconds": 0.17974890000004962,
+        "dbt_seconds": 19.82552249999935,
+        "validation_seconds": 8.030361199999788
+      },
+      "elapsed_seconds": 28.201740500000597,
+      "peak_python_tree_rss_bytes": 727707648,
+      "environment": {
+        "python": "3.12.14",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "packages": {
+          "pyarrow": "26.0.1",
+          "openpyxl": "3.1.5",
+          "dbt-core": "1.12.7",
+          "dbt-postgres": "1.11.0",
+          "psycopg": "3.3.9"
+        }
+      },
+      "source_metadata": {
+        "rows": 1067371,
+        "seed": null,
+        "data_kind": "public_real_historical",
+        "source_path": "C:\\Users\\jorge\\Documents\\Codex\\2026-11-11\\investiga-profundamente-el-mercado-laboral-actual\\outputs\\faro-data-foundation\\data\\online_retail_II.xlsx",
+        "parquet_path": "C:\\Users\\jorge\\Documents\\Codex\\2026-11-11\\investiga-profundamente-el-mercado-laboral-actual\\outputs\\faro-data-foundation\\data\\prepared\\bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980\\raw.parquet",
+        "dataset_sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+        "parquet_sha256": "ed2213896e48a753aa33ae79452b8ae4895ea6384ad10827b9a9d7133e95f848",
+        "source_namespace": "retail_uk_reference"
+      },
+      "benchmark_label": "replay",
+      "measured_wall_seconds": 29.69935179999993
+    },
+    {
+      "contract_version": "1.0.0",
+      "contracts_sha256": "7a92a2a53f8ad239e3c967846fdfed9b8ef83b40a5a577e1710e1a8e2c07278e",
+      "run_id": "e6d035ce2bd24077bbeb81d0dd286a1e",
+      "git_sha": "d405aa70bb227e3c653a490422ce7d80995209c3",
+      "code_sha256": "5015feda4f653b5bef4432b4766768fde100b50d84672fe9f46f39f11e64d97b",
+      "dataset_sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+      "source_namespace": "retail_uk_reference",
+      "data_kind": "public_real_historical",
+      "seed": null,
+      "as_of": "2026-11-16T23:27:06.231324+00:00",
+      "rows": 1067371,
+      "data_sha256": "2cda5344fa929f4a025ee85f6639a1d464eed2fcc4adf3e317263880786a53b6",
+      "checks": {
+        "status": "provisional",
+        "reconciled_groups": 1798,
+        "rows": 1067371,
+        "unknown_customer_rows": 243007,
+        "quarantine_rows": 0,
+        "known_signed_amount": "19287250.568"
+      },
+      "dbt": {
+        "nodes": 18,
+        "tests_passed": 11
+      },
+      "interval": {
+        "start": "2010-12-01",
+        "end": "2010-12-08"
+      },
+      "timings": {
+        "baseline_seconds": 0.0042180000000371365,
+        "load_seconds": 0.15911210000012943,
+        "dbt_seconds": 11.620099900000241,
+        "validation_seconds": 2.8600562000001446
+      },
+      "elapsed_seconds": 19.662996099999873,
+      "peak_python_tree_rss_bytes": 753278976,
+      "environment": {
+        "python": "3.12.14",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "packages": {
+          "pyarrow": "26.0.1",
+          "openpyxl": "3.1.5",
+          "dbt-core": "1.12.7",
+          "dbt-postgres": "1.11.0",
+          "psycopg": "3.3.9"
+        }
+      },
+      "source_metadata": {
+        "rows": 1067371,
+        "seed": null,
+        "data_kind": "public_real_historical",
+        "source_path": "C:\\Users\\jorge\\Documents\\Codex\\2026-11-11\\investiga-profundamente-el-mercado-laboral-actual\\outputs\\faro-data-foundation\\data\\online_retail_II.xlsx",
+        "parquet_path": "C:\\Users\\jorge\\Documents\\Codex\\2026-11-11\\investiga-profundamente-el-mercado-laboral-actual\\outputs\\faro-data-foundation\\data\\prepared\\bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980\\raw.parquet",
+        "dataset_sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+        "parquet_sha256": "ed2213896e48a753aa33ae79452b8ae4895ea6384ad10827b9a9d7133e95f848",
+        "source_namespace": "retail_uk_reference"
+      },
+      "benchmark_label": "backfill",
+      "measured_wall_seconds": 20.13608699999986
+    }
+  ],
+  "report": "C:\\Users\\jorge\\Documents\\Codex\\2026-11-11\\investiga-profundamente-el-mercado-laboral-actual\\outputs\\faro-data-foundation\\reports\\latest\\retail_uk_reference\\index.html",
+  "query_plan": {
+    "QUERY PLAN": [
+      {
+        "Plan": {
+          "Node Type": "Aggregate",
+          "Strategy": "Sorted",
+          "Partial Mode": "Finalize",
+          "Parallel Aware": false,
+          "Async Capable": false,
+          "Startup Cost": 52478.16,
+          "Total Cost": 52547.15,
+          "Plan Rows": 200,
+          "Plan Width": 72,
+          "Actual Startup Time": 262.0,
+          "Actual Total Time": 314.982,
+          "Actual Rows": 3,
+          "Actual Loops": 1,
+          "Group Key": [
+            "fact_invoice_line_1.record_class"
+          ],
+          "Shared Hit Blocks": 7657,
+          "Shared Read Blocks": 40332,
+          "Shared Dirtied Blocks": 0,
+          "Shared Written Blocks": 0,
+          "Local Hit Blocks": 0,
+          "Local Read Blocks": 0,
+          "Local Dirtied Blocks": 0,
+          "Local Written Blocks": 0,
+          "Temp Read Blocks": 2865,
+          "Temp Written Blocks": 2868,
+          "Plans": [
+            {
+              "Node Type": "Gather Merge",
+              "Parent Relationship": "Outer",
+              "Parallel Aware": false,
+              "Async Capable": false,
+              "Startup Cost": 52478.16,
+              "Total Cost": 52540.65,
+              "Plan Rows": 400,
+              "Plan Width": 72,
+              "Actual Startup Time": 260.843,
+              "Actual Total Time": 314.956,
+              "Actual Rows": 9,
+              "Actual Loops": 1,
+              "Workers Planned": 2,
+              "Workers Launched": 2,
+              "Shared Hit Blocks": 7657,
+              "Shared Read Blocks": 40332,
+              "Shared Dirtied Blocks": 0,
+              "Shared Written Blocks": 0,
+              "Local Hit Blocks": 0,
+              "Local Read Blocks": 0,
+              "Local Dirtied Blocks": 0,
+              "Local Written Blocks": 0,
+              "Temp Read Blocks": 2865,
+              "Temp Written Blocks": 2868,
+              "Plans": [
+                {
+                  "Node Type": "Aggregate",
+                  "Strategy": "Sorted",
+                  "Partial Mode": "Partial",
+                  "Parent Relationship": "Outer",
+                  "Parallel Aware": false,
+                  "Async Capable": false,
+                  "Startup Cost": 51478.13,
+                  "Total Cost": 51494.45,
+                  "Plan Rows": 200,
+                  "Plan Width": 72,
+                  "Actual Startup Time": 185.174,
+                  "Actual Total Time": 234.224,
+                  "Actual Rows": 3,
+                  "Actual Loops": 3,
+                  "Group Key": [
+                    "fact_invoice_line_1.record_class"
+                  ],
+                  "Shared Hit Blocks": 7657,
+                  "Shared Read Blocks": 40332,
+                  "Shared Dirtied Blocks": 0,
+                  "Shared Written Blocks": 0,
+                  "Local Hit Blocks": 0,
+                  "Local Read Blocks": 0,
+                  "Local Dirtied Blocks": 0,
+                  "Local Written Blocks": 0,
+                  "Temp Read Blocks": 2865,
+                  "Temp Written Blocks": 2868,
+                  "Workers": [],
+                  "Plans": [
+                    {
+                      "Node Type": "Sort",
+                      "Parent Relationship": "Outer",
+                      "Parallel Aware": false,
+                      "Async Capable": false,
+                      "Startup Cost": 51478.13,
+                      "Total Cost": 51481.59,
+                      "Plan Rows": 1382,
+                      "Plan Width": 64,
+                      "Actual Startup Time": 184.671,
+                      "Actual Total Time": 203.513,
+                      "Actual Rows": 355790,
+                      "Actual Loops": 3,
+                      "Sort Key": [
+                        "fact_invoice_line_1.record_class"
+                      ],
+                      "Sort Method": "external merge",
+                      "Sort Space Used": 9072,
+                      "Sort Space Type": "Disk",
+                      "Shared Hit Blocks": 7657,
+                      "Shared Read Blocks": 40332,
+                      "Shared Dirtied Blocks": 0,
+                      "Shared Written Blocks": 0,
+                      "Local Hit Blocks": 0,
+                      "Local Read Blocks": 0,
+                      "Local Dirtied Blocks": 0,
+                      "Local Written Blocks": 0,
+                      "Temp Read Blocks": 2865,
+                      "Temp Written Blocks": 2868,
+                      "Workers": [
+                        {
+                          "Worker Number": 0,
+                          "Sort Method": "external merge",
+                          "Sort Space Used": 6424,
+                          "Sort Space Type": "Disk"
+                        },
+                        {
+                          "Worker Number": 1,
+                          "Sort Method": "external merge",
+                          "Sort Space Used": 7424,
+                          "Sort Space Type": "Disk"
+                        }
+                      ],
+                      "Plans": [
+                        {
+                          "Node Type": "Append",
+                          "Parent Relationship": "Outer",
+                          "Parallel Aware": true,
+                          "Async Capable": false,
+                          "Startup Cost": 0.0,
+                          "Total Cost": 51406.04,
+                          "Plan Rows": 1382,
+                          "Plan Width": 64,
+                          "Actual Startup Time": 0.718,
+                          "Actual Total Time": 127.113,
+                          "Actual Rows": 355790,
+                          "Actual Loops": 3,
+                          "Shared Hit Blocks": 7541,
+                          "Shared Read Blocks": 40332,
+                          "Shared Dirtied Blocks": 0,
+                          "Shared Written Blocks": 0,
+                          "Local Hit Blocks": 0,
+                          "Local Read Blocks": 0,
+                          "Local Dirtied Blocks": 0,
+                          "Local Written Blocks": 0,
+                          "Temp Read Blocks": 0,
+                          "Temp Written Blocks": 0,
+                          "Workers": [],
+                          "Subplans Removed": 0,
+                          "Plans": [
+                            {
+                              "Node Type": "Seq Scan",
+                              "Parent Relationship": "Member",
+                              "Parallel Aware": true,
+                              "Async Capable": false,
+                              "Relation Name": "fact_invoice_line",
+                              "Alias": "fact_invoice_line_1",
+                              "Startup Cost": 0.0,
+                              "Total Cost": 50802.6,
+                              "Plan Rows": 1381,
+                              "Plan Width": 64,
+                              "Actual Startup Time": 0.156,
+                              "Actual Total Time": 110.718,
+                              "Actual Rows": 355790,
+                              "Actual Loops": 3,
+                              "Filter": "(source_namespace = 'retail_uk_reference'::text)",
+                              "Rows Removed by Filter": 0,
+                              "Shared Hit Blocks": 7018,
+                              "Shared Read Blocks": 40332,
+                              "Shared Dirtied Blocks": 0,
+                              "Shared Written Blocks": 0,
+                              "Local Hit Blocks": 0,
+                              "Local Read Blocks": 0,
+                              "Local Dirtied Blocks": 0,
+                              "Local Written Blocks": 0,
+                              "Temp Read Blocks": 0,
+                              "Temp Written Blocks": 0,
+                              "Workers": []
+                            },
+                            {
+                              "Node Type": "Seq Scan",
+                              "Parent Relationship": "Member",
+                              "Parallel Aware": true,
+                              "Async Capable": false,
+                              "Relation Name": "fact_invoice_line",
+                              "Alias": "fact_invoice_line",
+                              "Startup Cost": 0.0,
+                              "Total Cost": 596.53,
+                              "Plan Rows": 1,
+                              "Plan Width": 11,
+                              "Actual Startup Time": 1.679,
+                              "Actual Total Time": 1.68,
+                              "Actual Rows": 0,
+                              "Actual Loops": 1,
+                              "Filter": "(source_namespace = 'retail_uk_reference'::text)",
+                              "Rows Removed by Filter": 10000,
+                              "Shared Hit Blocks": 523,
+                              "Shared Read Blocks": 0,
+                              "Shared Dirtied Blocks": 0,
+                              "Shared Written Blocks": 0,
+                              "Local Hit Blocks": 0,
+                              "Local Read Blocks": 0,
+                              "Local Dirtied Blocks": 0,
+                              "Local Written Blocks": 0,
+                              "Temp Read Blocks": 0,
+                              "Temp Written Blocks": 0,
+                              "Workers": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "Planning": {
+          "Shared Hit Blocks": 120,
+          "Shared Read Blocks": 0,
+          "Shared Dirtied Blocks": 0,
+          "Shared Written Blocks": 0,
+          "Local Hit Blocks": 0,
+          "Local Read Blocks": 0,
+          "Local Dirtied Blocks": 0,
+          "Local Written Blocks": 0,
+          "Temp Read Blocks": 0,
+          "Temp Written Blocks": 0
+        },
+        "Planning Time": 0.678,
+        "Triggers": [],
+        "Execution Time": 316.473
+      }
+    ]
+  }
+}

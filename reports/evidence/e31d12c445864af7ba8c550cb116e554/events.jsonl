@@ -1,0 +1,6 @@
+{"time": "2026-11-16T23:12:20.118273+00:00", "run_id": "e31d12c445864af7ba8c550cb116e554", "stage": "loaded", "rows": 10000, "cache_hit": true}
+{"time": "2026-11-16T23:12:28.020538+00:00", "run_id": "e31d12c445864af7ba8c550cb116e554", "stage": "validated", "data_sha256": "9e63422b8cfb66a59887fe171fc53364bb33a796324334f9da132cbda5dd366f", "status": "provisional"}
+{"time": "2026-11-16T23:12:28.105705+00:00", "run_id": "e31d12c445864af7ba8c550cb116e554", "stage": "failed", "error": "Injected crash before publication (SIMULATED)"}
+{"time": "2026-11-16T23:12:28.408224+00:00", "run_id": "e31d12c445864af7ba8c550cb116e554", "stage": "loaded", "rows": 10000, "cache_hit": true}
+{"time": "2026-11-16T23:12:36.359125+00:00", "run_id": "e31d12c445864af7ba8c550cb116e554", "stage": "validated", "data_sha256": "9e63422b8cfb66a59887fe171fc53364bb33a796324334f9da132cbda5dd366f", "status": "provisional"}
+{"time": "2026-11-16T23:12:36.452788+00:00", "run_id": "e31d12c445864af7ba8c550cb116e554", "stage": "published", "rows": 10000}

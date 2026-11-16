@@ -1,0 +1,183 @@
+{
+  "status": "exploratory-before-code-freeze",
+  "preparation_seconds": 46.89943620000031,
+  "runs": [
+    {
+      "contract_version": "1.0.0",
+      "contracts_sha256": "7a92a2a53f8ad239e3c967846fdfed9b8ef83b40a5a577e1710e1a8e2c07278e",
+      "run_id": "345f22ce669d47d49f3ce641d290a695",
+      "git_sha": "ab8f6b4ba42287ed7b30de22603515a4417537e2",
+      "dataset_sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+      "source_namespace": "retail_uk_reference",
+      "data_kind": "public_real_historical",
+      "seed": null,
+      "as_of": "2026-11-16T23:04:11.504492+00:00",
+      "rows": 1067371,
+      "data_sha256": "2cda5344fa929f4a025ee85f6639a1d464eed2fcc4adf3e317263880786a53b6",
+      "checks": {
+        "status": "provisional",
+        "reconciled_groups": 1798,
+        "rows": 1067371,
+        "unknown_customer_rows": 243007,
+        "quarantine_rows": 0,
+        "known_signed_amount": "19287250.568"
+      },
+      "dbt": {
+        "nodes": 18,
+        "tests_passed": 11
+      },
+      "interval": {
+        "start": "",
+        "end": ""
+      },
+      "timings": {
+        "baseline_seconds": 52.58629499999961,
+        "load_seconds": 28.432392600000185,
+        "dbt_seconds": 21.55720079999992,
+        "validation_seconds": 8.360522299999957
+      },
+      "elapsed_seconds": 111.12488580000036,
+      "peak_python_tree_rss_bytes": 895270912,
+      "environment": {
+        "python": "3.12.14",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "packages": {
+          "pyarrow": "26.0.1",
+          "openpyxl": "3.1.5",
+          "dbt-core": "1.12.7",
+          "dbt-postgres": "1.11.0",
+          "psycopg": "3.3.9"
+        }
+      },
+      "source_metadata": {
+        "rows": 1067371,
+        "seed": null,
+        "data_kind": "public_real_historical",
+        "source_path": "C:\\Users\\jorge\\Documents\\Codex\\2026-11-11\\investiga-profundamente-el-mercado-laboral-actual\\outputs\\faro-data-foundation\\data\\online_retail_II.xlsx",
+        "parquet_path": "C:\\Users\\jorge\\Documents\\Codex\\2026-11-11\\investiga-profundamente-el-mercado-laboral-actual\\outputs\\faro-data-foundation\\data\\prepared\\bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980\\raw.parquet",
+        "dataset_sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+        "parquet_sha256": "ed2213896e48a753aa33ae79452b8ae4895ea6384ad10827b9a9d7133e95f848",
+        "source_namespace": "retail_uk_reference"
+      },
+      "measured_wall_seconds": 112.10522039999978
+    },
+    {
+      "contract_version": "1.0.0",
+      "contracts_sha256": "7a92a2a53f8ad239e3c967846fdfed9b8ef83b40a5a577e1710e1a8e2c07278e",
+      "run_id": "40a4ecc70842431c98c555b8463b9a84",
+      "git_sha": "ab8f6b4ba42287ed7b30de22603515a4417537e2",
+      "dataset_sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+      "source_namespace": "retail_uk_reference",
+      "data_kind": "public_real_historical",
+      "seed": null,
+      "as_of": "2026-11-16T23:04:41.809510+00:00",
+      "rows": 1067371,
+      "data_sha256": "2cda5344fa929f4a025ee85f6639a1d464eed2fcc4adf3e317263880786a53b6",
+      "checks": {
+        "status": "provisional",
+        "reconciled_groups": 1798,
+        "rows": 1067371,
+        "unknown_customer_rows": 243007,
+        "quarantine_rows": 0,
+        "known_signed_amount": "19287250.568"
+      },
+      "dbt": {
+        "nodes": 18,
+        "tests_passed": 11
+      },
+      "interval": {
+        "start": "",
+        "end": ""
+      },
+      "timings": {
+        "baseline_seconds": 0.0025002000002132263,
+        "load_seconds": 0.1488894999997683,
+        "dbt_seconds": 20.433785899999748,
+        "validation_seconds": 8.613249400000313
+      },
+      "elapsed_seconds": 29.348392299999432,
+      "peak_python_tree_rss_bytes": 951631872,
+      "environment": {
+        "python": "3.12.14",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "packages": {
+          "pyarrow": "26.0.1",
+          "openpyxl": "3.1.5",
+          "dbt-core": "1.12.7",
+          "dbt-postgres": "1.11.0",
+          "psycopg": "3.3.9"
+        }
+      },
+      "source_metadata": {
+        "rows": 1067371,
+        "seed": null,
+        "data_kind": "public_real_historical",
+        "source_path": "C:\\Users\\jorge\\Documents\\Codex\\2026-11-11\\investiga-profundamente-el-mercado-laboral-actual\\outputs\\faro-data-foundation\\data\\online_retail_II.xlsx",
+        "parquet_path": "C:\\Users\\jorge\\Documents\\Codex\\2026-11-11\\investiga-profundamente-el-mercado-laboral-actual\\outputs\\faro-data-foundation\\data\\prepared\\bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980\\raw.parquet",
+        "dataset_sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+        "parquet_sha256": "ed2213896e48a753aa33ae79452b8ae4895ea6384ad10827b9a9d7133e95f848",
+        "source_namespace": "retail_uk_reference"
+      },
+      "measured_wall_seconds": 29.833480600000257
+    },
+    {
+      "contract_version": "1.0.0",
+      "contracts_sha256": "7a92a2a53f8ad239e3c967846fdfed9b8ef83b40a5a577e1710e1a8e2c07278e",
+      "run_id": "4345144e35b049c382f480a44ffd032d",
+      "git_sha": "ab8f6b4ba42287ed7b30de22603515a4417537e2",
+      "dataset_sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+      "source_namespace": "retail_uk_reference",
+      "data_kind": "public_real_historical",
+      "seed": null,
+      "as_of": "2026-11-16T23:05:03.218821+00:00",
+      "rows": 1067371,
+      "data_sha256": "2cda5344fa929f4a025ee85f6639a1d464eed2fcc4adf3e317263880786a53b6",
+      "checks": {
+        "status": "provisional",
+        "reconciled_groups": 1798,
+        "rows": 1067371,
+        "unknown_customer_rows": 243007,
+        "quarantine_rows": 0,
+        "known_signed_amount": "19287250.568"
+      },
+      "dbt": {
+        "nodes": 18,
+        "tests_passed": 11
+      },
+      "interval": {
+        "start": "2010-12-01",
+        "end": "2010-12-08"
+      },
+      "timings": {
+        "baseline_seconds": 0.002070599999569822,
+        "load_seconds": 0.29968409999946743,
+        "dbt_seconds": 12.364487900000313,
+        "validation_seconds": 2.8501620999995794
+      },
+      "elapsed_seconds": 20.91846429999987,
+      "peak_python_tree_rss_bytes": 1036197888,
+      "environment": {
+        "python": "3.12.14",
+        "platform": "Windows-11-10.0.26200-SP0",
+        "packages": {
+          "pyarrow": "26.0.1",
+          "openpyxl": "3.1.5",
+          "dbt-core": "1.12.7",
+          "dbt-postgres": "1.11.0",
+          "psycopg": "3.3.9"
+        }
+      },
+      "source_metadata": {
+        "rows": 1067371,
+        "seed": null,
+        "data_kind": "public_real_historical",
+        "source_path": "C:\\Users\\jorge\\Documents\\Codex\\2026-11-11\\investiga-profundamente-el-mercado-laboral-actual\\outputs\\faro-data-foundation\\data\\online_retail_II.xlsx",
+        "parquet_path": "C:\\Users\\jorge\\Documents\\Codex\\2026-11-11\\investiga-profundamente-el-mercado-laboral-actual\\outputs\\faro-data-foundation\\data\\prepared\\bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980\\raw.parquet",
+        "dataset_sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+        "parquet_sha256": "ed2213896e48a753aa33ae79452b8ae4895ea6384ad10827b9a9d7133e95f848",
+        "source_namespace": "retail_uk_reference"
+      },
+      "measured_wall_seconds": 21.379144199999246
+    }
+  ]
+}

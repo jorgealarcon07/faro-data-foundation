@@ -1,0 +1,12 @@
+{
+  "data_kind": "synthetic",
+  "rows": 10000,
+  "first_run": "c7f9ec991e5946548622194643ec0c6b",
+  "crash_run": "4d3a1b3ba3f54e01ac534d9efd46fc6c",
+  "resumed_run": "4d3a1b3ba3f54e01ac534d9efd46fc6c",
+  "backfill_run": "0579d94a5f854fef915ba9f30c913883",
+  "data_sha256": "9e63422b8cfb66a59887fe171fc53364bb33a796324334f9da132cbda5dd366f",
+  "publication_preserved": true,
+  "rebuild_equals_backfill": true,
+  "report": "C:\\Users\\jorge\\Documents\\Codex\\2026-11-11\\investiga-profundamente-el-mercado-laboral-actual\\outputs\\faro-data-foundation\\reports\\latest\\retail_synthetic\\index.html"
+}

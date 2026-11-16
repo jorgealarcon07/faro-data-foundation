@@ -1,0 +1,3 @@
+{"time": "2026-11-16T23:12:36.754814+00:00", "run_id": "4cee338b2e77411199561582b7dd871c", "stage": "loaded", "rows": 10000, "cache_hit": true}
+{"time": "2026-11-16T23:12:44.200181+00:00", "run_id": "4cee338b2e77411199561582b7dd871c", "stage": "validated", "data_sha256": "9e63422b8cfb66a59887fe171fc53364bb33a796324334f9da132cbda5dd366f", "status": "provisional"}
+{"time": "2026-11-16T23:12:44.294839+00:00", "run_id": "4cee338b2e77411199561582b7dd871c", "stage": "published", "rows": 10000}

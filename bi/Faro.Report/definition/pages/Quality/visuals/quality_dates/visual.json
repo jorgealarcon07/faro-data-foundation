@@ -1,0 +1,80 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.0.0/schema.json",
+  "name": "quality_dates",
+  "position": {
+    "x": 30,
+    "y": 180,
+    "z": 0,
+    "height": 480,
+    "width": 1210,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Quality"
+                    }
+                  },
+                  "Property": "business_date"
+                }
+              },
+              "queryRef": "Quality.business_date",
+              "nativeQueryRef": "business_date"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Quality"
+                    }
+                  },
+                  "Property": "publication_status"
+                }
+              },
+              "queryRef": "Quality.publication_status",
+              "nativeQueryRef": "publication_status"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Quality"
+                    }
+                  },
+                  "Property": "Filas sin cliente"
+                }
+              },
+              "queryRef": "Quality.Filas sin cliente",
+              "nativeQueryRef": "Filas sin cliente"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Quality"
+                    }
+                  },
+                  "Property": "Filas en cuarentena"
+                }
+              },
+              "queryRef": "Quality.Filas en cuarentena",
+              "nativeQueryRef": "Filas en cuarentena"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

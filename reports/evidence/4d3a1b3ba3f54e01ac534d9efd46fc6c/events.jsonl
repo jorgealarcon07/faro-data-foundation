@@ -1,0 +1,6 @@
+{"time": "2026-11-16T23:24:34.253398+00:00", "run_id": "4d3a1b3ba3f54e01ac534d9efd46fc6c", "stage": "loaded", "rows": 10000, "cache_hit": true}
+{"time": "2026-11-16T23:24:41.378398+00:00", "run_id": "4d3a1b3ba3f54e01ac534d9efd46fc6c", "stage": "validated", "data_sha256": "9e63422b8cfb66a59887fe171fc53364bb33a796324334f9da132cbda5dd366f", "status": "provisional"}
+{"time": "2026-11-16T23:24:41.455060+00:00", "run_id": "4d3a1b3ba3f54e01ac534d9efd46fc6c", "stage": "failed", "error": "Injected crash before publication (SIMULATED)"}
+{"time": "2026-11-16T23:24:41.732062+00:00", "run_id": "4d3a1b3ba3f54e01ac534d9efd46fc6c", "stage": "loaded", "rows": 10000, "cache_hit": true}
+{"time": "2026-11-16T23:24:49.158073+00:00", "run_id": "4d3a1b3ba3f54e01ac534d9efd46fc6c", "stage": "validated", "data_sha256": "9e63422b8cfb66a59887fe171fc53364bb33a796324334f9da132cbda5dd366f", "status": "provisional"}
+{"time": "2026-11-16T23:24:49.252277+00:00", "run_id": "4d3a1b3ba3f54e01ac534d9efd46fc6c", "stage": "published", "rows": 10000}
