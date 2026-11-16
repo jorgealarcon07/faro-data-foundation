@@ -1,0 +1,27 @@
+version: 2
+models:
+  - name: fact_invoice_line
+    description: One preserved source row; amounts are signed activity, never cash or receivables.
+    columns:
+      - name: source_row_id
+        data_tests: [unique, not_null]
+      - name: record_class
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: [sale, cancellation, adjustment, quarantine]
+      - name: customer_key
+        data_tests: [not_null]
+      - name: currency
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: [GBP]
+  - name: dim_customer
+    columns:
+      - name: customer_key
+        data_tests: [unique, not_null]
+  - name: mart_quality
+    description: Quality at business date; invalid dates remain in a NULL bucket.
+

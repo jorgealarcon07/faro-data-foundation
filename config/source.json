@@ -1,0 +1,14 @@
+{
+  "dataset": "UCI Online Retail II",
+  "url": "https://archive.ics.uci.edu/static/public/502/online+retail+ii.zip",
+  "sha256": "572e36277c2390fbfde10664750731e0a86f55e33470d91919085f0408e67bfb",
+  "workbook_sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+  "member": "online_retail_II.xlsx",
+  "source_namespace": "retail_uk_reference",
+  "data_kind": "public_real_historical",
+  "currency": "GBP",
+  "license": "CC-BY-4.0",
+  "doi": "10.24432/C5CG6D",
+  "expected_rows": 1067371,
+  "sheets": ["Year 2009-2010", "Year 2010-2011"]
+}

@@ -1,0 +1,12 @@
+name: faro_foundation
+version: '1.0.0'
+config-version: 2
+profile: faro
+model-paths: [models]
+test-paths: [tests]
+models:
+  faro_foundation:
+    +materialized: table
+flags:
+  send_anonymous_usage_stats: false
+

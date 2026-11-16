@@ -1,0 +1,7 @@
+{
+  "version": "1.0.0",
+  "sha256": {
+    "invoice_line.schema.json": "d42e6a7de1dc29ae5d0feb41af49d9145c57510c32d1fc3d656faa2b45883362",
+    "run_manifest.schema.json": "5436805506e973fefc2117515e479833ad5e992e446c212fce6661df2e6fd98e"
+  }
+}

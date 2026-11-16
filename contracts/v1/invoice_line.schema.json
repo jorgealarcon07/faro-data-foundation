@@ -1,0 +1,12 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema", "title":"FaroInvoiceLine",
+  "type":"object",
+  "required":["source_namespace","source_row_id","invoice_id","event_local_time","quantity","unit_price","currency","record_class","customer_key"],
+  "properties":{
+    "source_namespace":{"type":"string"},"source_row_id":{"type":"string","pattern":"^[a-f0-9]{64}$"},
+    "invoice_id":{"type":["string","null"]},"event_local_time":{"type":["string","null"]},
+    "quantity":{"type":["string","null"]},"unit_price":{"type":["string","null"]},
+    "currency":{"const":"GBP"},"record_class":{"enum":["sale","cancellation","adjustment","quarantine"]},
+    "customer_key":{"type":"string"}
+  }
+}

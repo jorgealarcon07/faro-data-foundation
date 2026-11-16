@@ -1,0 +1,14 @@
+faro:
+  target: local
+  outputs:
+    local:
+      type: postgres
+      host: "{{ env_var('FARO_DB_HOST', '127.0.0.1') }}"
+      port: "{{ env_var('FARO_DB_PORT', '55432') | int }}"
+      user: "{{ env_var('FARO_DB_USER', 'faro') }}"
+      password: "{{ env_var('FARO_DB_PASSWORD') }}"
+      dbname: "{{ env_var('FARO_DB_NAME', 'faro') }}"
+      schema: "{{ env_var('FARO_CANDIDATE_SCHEMA', 'faro_compile') }}"
+      threads: 2
+      connect_timeout: 10
+
