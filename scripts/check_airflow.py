@@ -1,13 +1,17 @@
 """Run inside the Linux Airflow image; a source compile alone is not a DAG import test."""
 
-from airflow.models import DagBag
+from itertools import pairwise
 
-bag = DagBag(dag_folder="/app/dags", include_examples=False)
+from airflow.dag_processing.dagbag import DagBag
+
+bag = DagBag(dag_folder="/app/dags")
 if bag.import_errors:
     raise SystemExit(str(bag.import_errors))
-dag = bag.get_dag("faro_data_close")
-assert dag is not None
-assert set(dag.task_ids) == {"prepare", "load", "build", "validate", "publish"}
-assert dag.get_task("validate").downstream_task_ids == {"publish"}
+dag = bag.dags["faro_data_close"]
+stages = ("prepare", "load", "build", "validate", "publish")
+assert set(dag.task_ids) == set(stages)
+for stage, successor in pairwise(stages):
+    assert dag.get_task(stage).downstream_task_ids == {successor}
+assert not dag.get_task(stages[-1]).downstream_task_ids
 assert dag.max_active_runs == 1
 print("Airflow DAG imported; 5 phases and dependencies checked")
