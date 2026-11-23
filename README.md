@@ -1,10 +1,24 @@
-# Faro · Verifiable Data Close
+# Cierre de ventas
 
-A complete batch data product built with **Python, PostgreSQL, dbt and an Airflow adapter**. It preserves source rows, reconciles independent Decimal totals, and publishes a new snapshot only after critical checks pass. A failed candidate leaves the previous publication available.
+**Data Engineering** · Datos históricos · Reino Unido · [Portafolio de Jorge Alarcón](https://github.com/jorgealarcon07#proyectos)
 
-**Portfolio project, not a real employer engagement.** UK historical public data and synthetic incident scenarios are kept separate. No claimed revenue, recovery or labor savings. Project 01 only; the other Faro projects have not been implemented.
+![Python](assets/stack/python.svg) ![SQL · PostgreSQL](assets/stack/postgresql.svg) ![dbt](assets/stack/dbt.svg) ![Parquet](assets/stack/apacheparquet.svg)
 
-![Reporte real de actividad](assets/web/real-activity.png)
+## ¿Qué ventas podemos dar por cerradas?
+
+Construí un proceso que separa ventas, cancelaciones y ajustes, comprueba los totales y avisa a finanzas cuando faltan datos. Finanzas puede consultar actividad con importes comprobados y ver qué parte carece de cliente. La falta de identificación limita los análisis por cliente. Los importes describen actividad comercial histórica en libras esterlinas.
+
+**Resultado medido.** El cierre cuadró en 1.798 grupos de fecha y tipo de movimiento. De 1.067.371 filas, 243.007 carecían de cliente identificado, así que el informe quedó provisional.
+
+[Abrir el informe en el navegador](https://jorgealarcon07.github.io/jorgealarcon07/cierre-de-ventas/) · [Leer el caso de estudio](CASO_DE_ESTUDIO.md) · [Ver la arquitectura](docs/ARQUITECTURA.md)
+
+![Informe de calidad del cierre con el estado provisional y los motivos](assets/web/real-quality.png)
+
+## Cómo se construyó
+
+Leí las dos hojas de Online Retail II, conservé cada fila en Parquet y usé SQL y dbt para clasificar los movimientos en PostgreSQL. Un segundo cálculo en Python vuelve a leer la fuente y comprueba conteos e importes antes de publicar. Una carga que falla deja disponible el cierre anterior.
+
+[Resultados y conciliación](docs/RESULTADOS.md) · [Prueba de recuperación](docs/INCIDENTE_SIMULADO.md) · [Datos y licencia](DATA_SOURCES.md)
 
 ## Qué se puede revisar
 
@@ -20,7 +34,7 @@ Se procesaron las **1.067.371 filas de ambas hojas** de UCI. Rebuild, replay y b
 
 Python **3.12**, Git y PostgreSQL **17**. Se verificó en Windows 11 con PostgreSQL 17.12 nativo. Docker Compose es una ruta alternativa configurada; su ejecución y Airflow requieren Linux containers/WSL2 y no se comprobaron en este host. Power BI Desktop es opcional para consumir: HTML/CSV/JSON funcionan sin él.
 
-En Windows conviene clonar en una ruta corta y crear el entorno en una ruta corta: pip puede exceder el límite de rutas de Windows al instalar dbt. El entorno verificado de este workspace está en `C:/Users/jorge/Documents/Codex/work/faro01/venv`. No está versionado ni es necesario usar esa ruta en otro equipo.
+En Windows conviene clonar en una ruta corta y crear el entorno en una ruta corta: pip puede exceder el límite de rutas de Windows al instalar dbt.
 
 ```powershell
 # Desde el repositorio, con Python 3.12 disponible:
@@ -105,7 +119,7 @@ python scripts/check_secrets.py
 python bi/validate_powerbi.py
 ```
 
-Las pruebas de integración requieren PostgreSQL accesible; no se omiten silenciosamente si falta. La ruta `verify_native.py` evita la separación de sesiones del sandbox. El CI de GitHub añade un servicio PostgreSQL y un smoke de importación del DAG en Linux; está configurado, **no ejecutado remotamente**, pues no se hizo push. La validación BI consulta esquemas Microsoft y necesita red; no equivale a abrir/refrescar Desktop.
+Las pruebas de integración requieren PostgreSQL accesible; no se omiten silenciosamente si falta. La ruta `verify_native.py` evita la separación de sesiones del sandbox. El CI de GitHub añade un servicio PostgreSQL y un smoke de importación del DAG en Linux; su estado se puede consultar en la pestaña Actions del repositorio. La validación BI consulta esquemas Microsoft y necesita red; no equivale a abrir/refrescar Desktop.
 
 ## Alcance y límites
 
