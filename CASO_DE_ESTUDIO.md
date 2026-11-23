@@ -1,5 +1,7 @@
 # Faro — Una cifra publicada debe poder explicarse
 
+[English](CASE_STUDY.md)
+
 **Proyecto 01 · Data Engineering · 16-11-2026.** Laboratorio de una empresa ficticia de software para operaciones financieras. No es experiencia laboral atribuida a un cliente real.
 
 ## Problema
