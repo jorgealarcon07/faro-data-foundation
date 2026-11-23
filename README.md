@@ -10,7 +10,7 @@ I built a sales close for a fictional finance team. It classifies sales, cancell
 
 **Measured result.** The pipeline processed 1,067,371 rows and matched an independent calculation across 1,798 groups by date and transaction type. It published the close as provisional because 243,007 rows lacked a customer ID.
 
-[Case study](CASE_STUDY.md) · [Open interactive report (Spanish)](https://jorgealarcon07.github.io/jorgealarcon07/cierre-de-ventas/) · [Architecture (Spanish)](docs/ARQUITECTURA.md)
+[Case study](CASE_STUDY.md) · [Open interactive report](https://jorgealarcon07.github.io/jorgealarcon07/cierre-de-ventas/index.en.html) · [Architecture (Spanish)](docs/ARQUITECTURA.md)
 
 ![Quality view from the Spanish sales close report showing the missing customer IDs](assets/web/real-quality.png)
 
@@ -36,3 +36,5 @@ faro report --namespace retail_synthetic
 ```
 
 Open `reports/latest/retail_synthetic/index.html`. See the [full guide in Spanish](README.es.md) for a Windows runner with an isolated database, the historical rebuild and backfills.
+
+Both report languages share the same evidence files. The [saved English report](reports/published/retail_uk_reference/index.en.html) also opens from a local checkout.

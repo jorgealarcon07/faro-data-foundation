@@ -12,6 +12,8 @@ Construí un proceso que separa ventas, cancelaciones y ajustes, comprueba los t
 
 [Abrir el informe en el navegador](https://jorgealarcon07.github.io/jorgealarcon07/cierre-de-ventas/) · [Leer el caso de estudio](CASO_DE_ESTUDIO.md) · [Ver la arquitectura](docs/ARQUITECTURA.md)
 
+El informe permite cambiar a inglés desde el encabezado. Al ejecutar `faro report`, se generan `index.html` e `index.en.html` junto al mismo manifiesto y los mismos CSV.
+
 ![Informe de calidad del cierre con el estado provisional y los motivos](assets/web/real-quality.png)
 
 ## Cómo se construyó

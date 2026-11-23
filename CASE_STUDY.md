@@ -15,7 +15,7 @@ A second implementation reads the original workbook and checks counts and amount
 ## What the test showed
 
 - Both worksheets of the historical UCI Online Retail II dataset were processed, covering **1,067,371 rows**. The final run matched the independent calculation across **1,798 groups** by date and activity type. Rebuild, replay and backfill produced the same canonical data hash. [Data provenance and license (Spanish)](DATA_SOURCES.md) · [Acceptance evidence](reports/acceptance.json)
-- The close was marked **provisional** because **243,007 rows** lacked a customer ID. An injected failure in the synthetic demo preserved the previous snapshot and the pipeline recovered. The local run passed 30 pytest tests, and successful builds ran 11 dbt tests each. [Measured results and run conditions (Spanish)](docs/RESULTADOS.md) · [Open interactive report (Spanish)](https://jorgealarcon07.github.io/jorgealarcon07/cierre-de-ventas/)
+- The close was marked **provisional** because **243,007 rows** lacked a customer ID. An injected failure in the synthetic demo preserved the previous snapshot and the pipeline recovered. The local run passed 30 pytest tests, and successful builds ran 11 dbt tests each. [Measured results and run conditions (Spanish)](docs/RESULTADOS.md) · [Open interactive report](https://jorgealarcon07.github.io/jorgealarcon07/cierre-de-ventas/index.en.html)
 
 ## What I learned
 

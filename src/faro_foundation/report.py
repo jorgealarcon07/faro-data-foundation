@@ -7,6 +7,7 @@ from pathlib import Path
 
 from . import store
 from .common import FaroError, Settings, utc_now, write_json
+from .report_language import REPORT_FILES, localize
 
 
 def export_report(settings: Settings, namespace: str, directory: Path | None = None) -> Path:
@@ -69,13 +70,16 @@ def export_report(settings: Settings, namespace: str, directory: Path | None = N
                 writer = csv.DictWriter(stream, fieldnames=list(rows[0]))
                 writer.writeheader()
                 writer.writerows(rows)
-    encoded = json.dumps(payload, default=str, ensure_ascii=False).replace("<", "\\u003c")
-    template = (settings.home / "src/faro_foundation/templates/report.html").read_text(
-        encoding="utf-8"
-    )
-    rendered = template.replace("__PAYLOAD__", encoded).replace(
-        "__NAMESPACE__", html.escape(namespace)
-    )
-    target = directory / "index.html"
-    target.write_text(rendered, encoding="utf-8")
-    return target
+    render_pages(directory, payload)
+    return directory / REPORT_FILES["es"]
+
+
+def render_pages(directory, payload):
+    """Render both languages from one validated publication and shared exports."""
+    encoded = json.dumps(payload, default=str, ensure_ascii=False).replace("<", r"\u003c")
+    template = (Path(__file__).parent / "templates/report.html").read_text(encoding="utf-8")
+    for language, filename in REPORT_FILES.items():
+        page = localize(template, language).replace(
+            "__NAMESPACE__", html.escape(payload["namespace"])
+        )
+        (directory / filename).write_text(page.replace("__PAYLOAD__", encoded), encoding="utf-8")
